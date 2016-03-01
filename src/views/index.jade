@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		Title=Bulletinboard
+		link(rel="stylesheet" type="text/css" href="styles.css")
+		script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+	body
+		#top
+			a(href='/messages') All Messages
+			h1 What's on your mind?
+		#form
+			span 
+			form(name= "bulletinboard" action='/' method='post')
+				label Title
+				input(type="text" name='egg', id="egg", placeholder="title")
+				span 
+				textarea(name= 'message', cols=63, rows=10, id='message', placeholder="Drop a line")
+				input(type='submit' value='Post')

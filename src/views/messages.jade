@@ -1,0 +1,9 @@
+html
+	head
+		link(rel="stylesheet" type="text/css" href="styles.css")
+	body
+		#top
+			h1 What's on your friends' minds? 
+			a(href='/') Home
+			each message in messages
+				li User: #{message.id}, title: #{message.title}, message: #{message.body}
